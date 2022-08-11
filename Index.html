@@ -1,391 +1,447 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
+      //variables
+      // var a = 0;
+      // var a = 0; // it's allowed to redeclare block-scoped variable 'a'
+      // let b = 1;
+      // let b = 1; // Cannot redeclare block-scoped variable 'b'
+      // let c = 2;
+      // const d = 2;
+      // const d = 2; // Cannot redeclare block-scoped variable 'b'
+      // const e = 2;
+      // console.log("console error:- ", a , b , c,d,e);
 
-        //variables
-        // var a = 0;
-        // var a = 0; // it's allowed to redeclare block-scoped variable 'a'
-        // let b = 1;
-        // let b = 1; // Cannot redeclare block-scoped variable 'b'
-        // let c = 2;
-        // const d = 2;
-        // const d = 2; // Cannot redeclare block-scoped variable 'b'
-        // const e = 2; 
-        // console.log("console error:- ", a , b , c,d,e);
-        
-        // String methods 
-        // 1 :- length()
-        // let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        // let length = txt.length;
-        // console.log("length of the string is :- ",length);
-        // output :- length of the string is :- 26
+      // String methods
+      // 1 :- length()
+      // let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      // let length = txt.length;
+      // console.log("length of the string is :- ",length);
+      // output :- length of the string is :- 26
 
-        // 2 :- slice(start , end)
-        // let str = "Apple , Banana , Kiwi";
-        // let part = str.slice(7,14);
-        // console.log("slice :- ",part);
-        // output :- slice:- Banana
-        // Note :-  if the parameter starts with negative the position is counted from the end of the string
-        // let str = "Apple , Banana , Kiwi";
-        // let part = str.slice(-5, -1);
-        // console.log("slice :- ",part);
-        // Output :- slice :- Kiw
+      // 2 :- slice(start , end)
+      // let str = "Apple , Banana , Kiwi";
+      // let part = str.slice(7,14);
+      // console.log("slice :- ",part);
+      // output :- slice:- Banana
+      // Note :-  if the parameter starts with negative the position is counted from the end of the string
+      // let str = "Apple , Banana , Kiwi";
+      // let part = str.slice(-5, -1);
+      // console.log("slice :- ",part);
+      // Output :- slice :- Kiw
 
-        // 3 :- substring(start , end)
-        // let str = "Apple , Banana , Kiwi";
-        // let part = str.substring(7,14);
-        // let part1 = str.substring(-7,14); // -7 is treated as 0 in the substring
-        // console.log("substring :- ",part);
-        // output :- substring :- Banana
-        // console.log("substring Negative:- ",part1);
-        // output :- substring Negative :- Apple , Banana
+      // 3 :- substring(start , end)
+      // let str = "Apple , Banana , Kiwi";
+      // let part = str.substring(7,14);
+      // let part1 = str.substring(-7,14); // -7 is treated as 0 in the substring
+      // console.log("substring :- ",part);
+      // output :- substring :- Banana
+      // console.log("substring Negative:- ",part1);
+      // output :- substring Negative :- Apple , Banana
 
-        // 4:- substr(start , length)
-        // let str = "Apple , Banana , Kiwi";
-        // let part = str.substr(7,6);
-        // console.log("SubString :- ", part);
-        // OutPut :- SubString :-   Banan
-        // let part1 = str.substr(7);
-        // console.log("SubString Single :- ", part1);
-        // OutPut :- SubString Single :-   Banana , Kiwi
-        // let part3 = str.substr(-4);
-        // console.log("SubString Single Negative :- ", part3);
-        // OutPut :- SubString Single Negative :-  Kiwi
+      // 4:- substr(start , length)
+      // let str = "Apple , Banana , Kiwi";
+      // let part = str.substr(7,6);
+      // console.log("SubString :- ", part);
+      // OutPut :- SubString :-   Banan
+      // let part1 = str.substr(7);
+      // console.log("SubString Single :- ", part1);
+      // OutPut :- SubString Single :-   Banana , Kiwi
+      // let part3 = str.substr(-4);
+      // console.log("SubString Single Negative :- ", part3);
+      // OutPut :- SubString Single Negative :-  Kiwi
 
-        // 5 :- replace()
-        // it is a case sensitive.
-        // let text = "Please visit W3Schools!!!";
-        // let newText = text.replace("W3Schools", "HR-Mantra");
-        // console.log("Old Text :- ",text);
-        // OutPut :- Old Text :-  Please visit W3Schools!!!
-        // console.log("New Text :- ",newText);
-        // OutPut :- New Text :-  Please visit HR-Mantra!!!
+      // 5 :- replace()
+      // it is a case sensitive.
+      // let text = "Please visit W3Schools!!!";
+      // let newText = text.replace("W3Schools", "HR-Mantra");
+      // console.log("Old Text :- ",text);
+      // OutPut :- Old Text :-  Please visit W3Schools!!!
+      // console.log("New Text :- ",newText);
+      // OutPut :- New Text :-  Please visit HR-Mantra!!!
 
-        // 6 :- toUpperCase()
-        // it is use to convert a string into uppercase
-        // let text1 = "Parth Joshi";
-        // let op = text1.toUpperCase();
-        // console.log(op);
-        // OutPut :- PARTH JOSHI
+      // 6 :- toUpperCase()
+      // it is use to convert a string into uppercase
+      // let text1 = "Parth Joshi";
+      // let op = text1.toUpperCase();
+      // console.log(op);
+      // OutPut :- PARTH JOSHI
 
-        // 7 :- toLowerCase()
-        // it is use to convert a string into lowercase
-        // let txt1 = "PARTH JOSHI"
-        // let op = txt1.toLowerCase();
-        // console.log(op);
-        // OutPut :- parth joshi
+      // 7 :- toLowerCase()
+      // it is use to convert a string into lowercase
+      // let txt1 = "PARTH JOSHI"
+      // let op = txt1.toLowerCase();
+      // console.log(op);
+      // OutPut :- parth joshi
 
-        // 8 :- concat()
-        // joins two or more strings. the concat() method can be used instead of the plus operator.
-        // let txt1 = "Hello"
-        // let txt2 = "World"
-        // let op = txt1.concat(" ", txt2);
-        // OR
-        // text = "Hello" + " " + "World!";
-        // text = "Hello".concat(" ", "World!");
-        // console.log(op, text);
-        // OutPut :- Hello World!
+      // 8 :- concat()
+      // joins two or more strings. the concat() method can be used instead of the plus operator.
+      // let txt1 = "Hello"
+      // let txt2 = "World"
+      // let op = txt1.concat(" ", txt2);
+      // OR
+      // text = "Hello" + " " + "World!";
+      // text = "Hello".concat(" ", "World!");
+      // console.log(op, text);
+      // OutPut :- Hello World!
 
-        // 9 :-  trim()
-        // it removes whitespace from both sides of a string.
-        // let txt1 = "      Hello World!     ";
-        // let op = txt1.trim();
-        // console.log(op);
-        // OutPut :- Hello World!
+      // 9 :-  trim()
+      // it removes whitespace from both sides of a string.
+      // let txt1 = "      Hello World!     ";
+      // let op = txt1.trim();
+      // console.log(op);
+      // OutPut :- Hello World!
 
-        // 10 :- string padding
-        // ECMAScript added two string methods
-        // 1 :- padStart()
-        // pads a string with another string.
-        // let text = "5";
-        // let op = text.padStart(4, "x");
-        // console.log(op);
-        // OutPut :- xxx5
+      // 10 :- string padding
+      // ECMAScript added two string methods
+      // 1 :- padStart()
+      // pads a string with another string.
+      // let text = "5";
+      // let op = text.padStart(4, "x");
+      // console.log(op);
+      // OutPut :- xxx5
 
-        // 2 :- padEnd()
-        // pads a string with another string.
-        // let txt = "5"
-        // let op1 = txt.padEnd(4, "x");
-        // console.log(op1);
-        // OutPut :- 5xxx
+      // 2 :- padEnd()
+      // pads a string with another string.
+      // let txt = "5"
+      // let op1 = txt.padEnd(4, "x");
+      // console.log(op1);
+      // OutPut :- 5xxx
 
-        // Note :- The padStart() method and padEnd() method is a string method.
-        // To pad a number , convert the numbert to a string first. e.g
-        // let numb = 5;
-        // let txt1 = numb.toString();
-        // let op2 = txt1.padStart(4, "0");
-        // console.log(op2);
-        // OutPut :- 0005
-        // let op3 = txt1.padEnd(4, "0");
-        // console.log(op3);
-        // Output :- 5000
+      // Note :- The padStart() method and padEnd() method is a string method.
+      // To pad a number , convert the numbert to a string first. e.g
+      // let numb = 5;
+      // let txt1 = numb.toString();
+      // let op2 = txt1.padStart(4, "0");
+      // console.log(op2);
+      // OutPut :- 0005
+      // let op3 = txt1.padEnd(4, "0");
+      // console.log(op3);
+      // Output :- 5000
 
-        // 11 :- string indexOf()
-        // returns the indexOf the first ocurrence of a specified text in a string.
-        // let str = "Please locate where 'locate' occuers!";
-        // let op =  str.indexOf("locate");
-        // console.log(op);
-        // OutPut :- 7
+      // 11 :- string indexOf()
+      // returns the indexOf the first ocurrence of a specified text in a string.
+      // let str = "Please locate where 'locate' occuers!";
+      // let op =  str.indexOf("locate");
+      // console.log(op);
+      // OutPut :- 7
 
-         // 11 :- string lastIndexOf()
-        // returns the lastIndexOf the first ocurrence of a specified text in a string.
-        // let str = "Please locate where 'locate' occuers!";
-        // let op =  str.lastIndexOf("locate");
-        // console.log(op);
-        // OutPut :- 21
+      // 11 :- string lastIndexOf()
+      // returns the lastIndexOf the first ocurrence of a specified text in a string.
+      // let str = "Please locate where 'locate' occuers!";
+      // let op =  str.lastIndexOf("locate");
+      // console.log(op);
+      // OutPut :- 21
 
-        // 12 :- string search()
-        // searches a string for a specified value and returns the position of the match.
-        // let str = "Please locate where 'locate' occurs!";
-        // let op = str.search("locate");
-        // console.log(op);
-        // OutPut :- 7
+      // 12 :- string search()
+      // searches a string for a specified value and returns the position of the match.
+      // let str = "Please locate where 'locate' occurs!";
+      // let op = str.search("locate");
+      // console.log(op);
+      // OutPut :- 7
 
-        // 13 :- string match()
-        // searches a string for a match against a regular expression, and returns the matches as an array object.
-        // let txt = "The rain in SPAIN stays mainly in the plain";
-        // let op = txt.match(/ain/gi);
-        // console.log(op);
+      // 13 :- string match()
+      // searches a string for a match against a regular expression, and returns the matches as an array object.
+      // let txt = "The rain in SPAIN stays mainly in the plain";
+      // let op = txt.match(/ain/gi);
+      // console.log(op);
 
-        // 14 :- string includes(searchstring, start)
-        // returns true if a string contains a specified value.
-        // let txt = "Hello World. Welcome to the Universe.";
-        // let op = txt.includes("World");
-        // let op1 = txt.includes("World", 12);
-        // console.log(op);
-        // OutPut :- true
-        // console.log(op1);
-        // OutPut :- false
+      // 14 :- string includes(searchstring, start)
+      // returns true if a string contains a specified value.
+      // let txt = "Hello World. Welcome to the Universe.";
+      // let op = txt.includes("World");
+      // let op1 = txt.includes("World", 12);
+      // console.log(op);
+      // OutPut :- true
+      // console.log(op1);
+      // OutPut :- false
 
-        // 15 :- String startsWith(searchvalue, length)
-        // returns true if a string begins with a specified value, otherwise false.
-        // let txt = "Hello World. Welcome to the Universe.";
-        // let op = txt.startsWith("Hello");
-        // console.log(op);
-        // let op1 = txt.startsWith("World");
-        // console.log(op1);
+      // 15 :- String startsWith(searchvalue, length)
+      // returns true if a string begins with a specified value, otherwise false.
+      // let txt = "Hello World. Welcome to the Universe.";
+      // let op = txt.startsWith("Hello");
+      // console.log(op);
+      // let op1 = txt.startsWith("World");
+      // console.log(op1);
 
-        // 16 :- String endsWith(searchvalue, length)
-        // returns true if a string ends with a specified value, otherwise false.
-        // let txt = "John Doe";
-        // let op = txt.endsWith("Doe");
-        // console.log(op);
-        // OutPut :- true
-        // let op2 = txt.endsWith("John");
-        // console.log(op2);
-        // Output :- false
-        // let op3 = txt.endsWith("John", 4);
-        // console.log(op3);
-        // OutPut :- true
-        // let op1 = txt.endsWith("John", 5);
-        // console.log(op1);
-        // OutPut :- false
+      // 16 :- String endsWith(searchvalue, length)
+      // returns true if a string ends with a specified value, otherwise false.
+      // let txt = "John Doe";
+      // let op = txt.endsWith("Doe");
+      // console.log(op);
+      // OutPut :- true
+      // let op2 = txt.endsWith("John");
+      // console.log(op2);
+      // Output :- false
+      // let op3 = txt.endsWith("John", 4);
+      // console.log(op3);
+      // OutPut :- true
+      // let op1 = txt.endsWith("John", 5);
+      // console.log(op1);
+      // OutPut :- false
 
-        // String Number Methods
-        // 1 :- toString()
-        // returns a number as a string.
-        // All number methods can be used on any type of numbers (literals, variables, or expressions).
-        // let x = 123;
-        // let op = x.toString();
-        // console.log(op);
-        // OutPut :- 123
-        // let y = (125).toString();
-        // console.log(y);
-        // OutPut :- 125
-        // let z = (100 + 24).toString();
-        // console.log(z);
-        // OutPut :- 124
+      // String Number Methods
+      // 1 :- toString()
+      // returns a number as a string.
+      // All number methods can be used on any type of numbers (literals, variables, or expressions).
+      // let x = 123;
+      // let op = x.toString();
+      // console.log(op);
+      // OutPut :- 123
+      // let y = (125).toString();
+      // console.log(y);
+      // OutPut :- 125
+      // let z = (100 + 24).toString();
+      // console.log(z);
+      // OutPut :- 124
 
-        // 2 :- toExponential()
-        // returns a string, with a number rounded and written using exponential notation.
-        // A parameter defines the number of characters behind the decimal point.
-        // let x = 9.035618;
-        // let op = x.toExponential(2);
-        // console.log(op);
-        // OutPut :- 9.04e+0
-        // let op1 = x.toExponential(4);
-        // console.log(op1);
-        // OutPut :- 9.0356e+0
-        // let op2 = x.toExponential(6);
-        // console.log(op2);
-        // OutPut :- 9.035618e+0
-        // Note :- The parameter is optional. If you don't specify it, JavaScript will not round the number.
+      // 2 :- toExponential()
+      // returns a string, with a number rounded and written using exponential notation.
+      // A parameter defines the number of characters behind the decimal point.
+      // let x = 9.035618;
+      // let op = x.toExponential(2);
+      // console.log(op);
+      // OutPut :- 9.04e+0
+      // let op1 = x.toExponential(4);
+      // console.log(op1);
+      // OutPut :- 9.0356e+0
+      // let op2 = x.toExponential(6);
+      // console.log(op2);
+      // OutPut :- 9.035618e+0
+      // Note :- The parameter is optional. If you don't specify it, JavaScript will not round the number.
 
-        // 3 :- toFixed()
-        // returns a string, with the number written with a specified number of decimals.
-        // let x = 9.656;
-        // let op = x.toFixed(0);
-        // console.log(op);
-        // Output :- 10
-        // let op1 = x.toFixed(2);
-        // console.log(op1);
-        // Output :- 9.66
-        // let op2 = x.toFixed(4);
-        // console.log(op2);
-        // Output :- 9.6560
-        // let op3 = x.toFixed(6);
-        // console.log(op3);
-        // Output :- 9.656000
-        // Note :- toFixed(2) is perfect for working with money.
+      // 3 :- toFixed()
+      // returns a string, with the number written with a specified number of decimals.
+      // let x = 9.656;
+      // let op = x.toFixed(0);
+      // console.log(op);
+      // Output :- 10
+      // let op1 = x.toFixed(2);
+      // console.log(op1);
+      // Output :- 9.66
+      // let op2 = x.toFixed(4);
+      // console.log(op2);
+      // Output :- 9.6560
+      // let op3 = x.toFixed(6);
+      // console.log(op3);
+      // Output :- 9.656000
+      // Note :- toFixed(2) is perfect for working with money.
 
-        // 4 :- toPrecision()
-        // returns a string, with a number written with a specified length.
-        // let x = 9.656;
-        // let op = x.toPrecision();
-        // console.log(op);
-        // OutPut :- 9.656
-        // let op1 = x.toPrecision(2);
-        // console.log(op1);
-        // OutPut :- 9.7
-        // let op2 = x.toPrecision(4);
-        // console.log(op2);
-        // Output :- 9.656
-        // let op3 = x.toPrecision(6);
-        // console.log(op3);
-        // OutPut :- 9.65600
+      // 4 :- toPrecision()
+      // returns a string, with a number written with a specified length.
+      // let x = 9.656;
+      // let op = x.toPrecision();
+      // console.log(op);
+      // OutPut :- 9.656
+      // let op1 = x.toPrecision(2);
+      // console.log(op1);
+      // OutPut :- 9.7
+      // let op2 = x.toPrecision(4);
+      // console.log(op2);
+      // Output :- 9.656
+      // let op3 = x.toPrecision(6);
+      // console.log(op3);
+      // OutPut :- 9.65600
 
-        // 5 :- valueOf()
-        // returns a number as a number.
-        // let x = 123;
-        // let op = x.valueOf();
-        // console.log(op);
-        // OutPut :- 123
-        // let op1 = (123).valueOf();
-        // console.log(op1);
-        // OutPut :- 123
-        // let op2 = (120 + 3).valueOf();
-        // console.log(op2); 
-        // OutPut :- 123
+      // 5 :- valueOf()
+      // returns a number as a number.
+      // let x = 123;
+      // let op = x.valueOf();
+      // console.log(op);
+      // OutPut :- 123
+      // let op1 = (123).valueOf();
+      // console.log(op1);
+      // OutPut :- 123
+      // let op2 = (120 + 3).valueOf();
+      // console.log(op2);
+      // OutPut :- 123
 
-        // Converting varibale to number
-        // 1 :- Number()
-        // returns a number, converted from its argument.
-        // let a = Number(true);
-        // console.log(a);
-        // OutPut :- 1
-        // let b = Number(false);
-        // console.log(b);
-        // OutPut :- 0
-        // let c = Number("10");
-        // console.log(c);
-        // OutPut :- 10
-        // let d = Number("   10");
-        // console.log(d);
-        // OutPut :- 10
-        // let e = Number("10   ");
-        // console.log(e);
-        // OutPut :- 10
-        // let f = Number("  10  ");
-        // console.log(f);
-        // OutPut :- 10
-        // let g = Number("10.33");
-        // console.log(g);
-        // OutPut :- 10.33
-        // let h = Number("10,33");
-        // console.log(h);
-        // OutPut :- NAN
-        // let i = Number("10 33");
-        // console.log(i);
-        // OutPut :- NAN
-        // let j = Number("john");
-        // console.log(j);
-        // OutPut :- NAN
-        // Number() can also convert a date to a number.
-        // let k = Number(new Date("1970-01-01"))
-        // console.log(k);
-        // OutPut :- 0
-        //Note :- If the number cannot be converted, NaN (Not a Number) is returned.
+      // Converting varibale to number
+      // 1 :- Number()
+      // returns a number, converted from its argument.
+      // let a = Number(true);
+      // console.log(a);
+      // OutPut :- 1
+      // let b = Number(false);
+      // console.log(b);
+      // OutPut :- 0
+      // let c = Number("10");
+      // console.log(c);
+      // OutPut :- 10
+      // let d = Number("   10");
+      // console.log(d);
+      // OutPut :- 10
+      // let e = Number("10   ");
+      // console.log(e);
+      // OutPut :- 10
+      // let f = Number("  10  ");
+      // console.log(f);
+      // OutPut :- 10
+      // let g = Number("10.33");
+      // console.log(g);
+      // OutPut :- 10.33
+      // let h = Number("10,33");
+      // console.log(h);
+      // OutPut :- NAN
+      // let i = Number("10 33");
+      // console.log(i);
+      // OutPut :- NAN
+      // let j = Number("john");
+      // console.log(j);
+      // OutPut :- NAN
+      // Number() can also convert a date to a number.
+      // let k = Number(new Date("1970-01-01"))
+      // console.log(k);
+      // OutPut :- 0
+      //Note :- If the number cannot be converted, NaN (Not a Number) is returned.
 
-        // 2 :- parseInt() 
-        // parses a string and returns a whole number. Spaces are allowed. Only the first number is returned.
-        // let a = parseInt("-10");
-        // console.log(a);
-        // OutPut :- -10
-        // let b = parseInt("-10.33");
-        // console.log(b);
-        // OutPut :- -10
-        // let c = parseInt("10");
-        // console.log(c);
-        // OutPut :- 10
-        // let d = parseInt("10.33");
-        // console.log(d);
-        // OutPut :- 10
-        // let e = parseInt("10 20 30");
-        // console.log(e);
-        // OutPut :- 10
-        // let f = parseInt("10 years");
-        // console.log(f);
-        // OutPut :- 10
-        // let g = parseInt("years 10");
-        // console.log(g);
-        // OutPut :- NaN
-        // Note :- If the number cannot be converted, NaN (Not a Number) is returned.
+      // 2 :- parseInt()
+      // parses a string and returns a whole number. Spaces are allowed. Only the first number is returned.
+      // let a = parseInt("-10");
+      // console.log(a);
+      // OutPut :- -10
+      // let b = parseInt("-10.33");
+      // console.log(b);
+      // OutPut :- -10
+      // let c = parseInt("10");
+      // console.log(c);
+      // OutPut :- 10
+      // let d = parseInt("10.33");
+      // console.log(d);
+      // OutPut :- 10
+      // let e = parseInt("10 20 30");
+      // console.log(e);
+      // OutPut :- 10
+      // let f = parseInt("10 years");
+      // console.log(f);
+      // OutPut :- 10
+      // let g = parseInt("years 10");
+      // console.log(g);
+      // OutPut :- NaN
+      // Note :- If the number cannot be converted, NaN (Not a Number) is returned.
 
-        // 3 :- parseFloat()
-        // parses a string and returns a number. Spaces are allowed. Only the first number is returned.
-        // let a = parseFloat("10");
-        // console.log(a);
-        // OutPut :- 10
-        // let b = parseFloat("10.33");
-        // console.log(b);
-        // OutPut :- 10.33
-        // let c = parseFloat("10 20 30");
-        // console.log(c);
-        // OutPut :- 10
-        // let d = parseFloat("10 years");
-        // console.log(d);
-        // OutPut :- 10
-        // let e = parseFloat("years 10");
-        // console.log(e);  
-        // OutPut :- NaN
-        // Note :- If the number cannot be converted, NaN (Not a Number) is returned.
+      // 3 :- parseFloat()
+      // parses a string and returns a number. Spaces are allowed. Only the first number is returned.
+      // let a = parseFloat("10");
+      // console.log(a);
+      // OutPut :- 10
+      // let b = parseFloat("10.33");
+      // console.log(b);
+      // OutPut :- 10.33
+      // let c = parseFloat("10 20 30");
+      // console.log(c);
+      // OutPut :- 10
+      // let d = parseFloat("10 years");
+      // console.log(d);
+      // OutPut :- 10
+      // let e = parseFloat("years 10");
+      // console.log(e);
+      // OutPut :- NaN
+      // Note :- If the number cannot be converted, NaN (Not a Number) is returned.
 
-        // JavaScript Min & Max value.
-        // 1 :- Max_Value 
-        // returns the largest possible number in JavaScript.
-        // let x = Number.MAX_VALUE;
-        // console.log(x);
-        // OutPut :- 1.7976931348623157e+308
+      // JavaScript Min & Max value.
+      // 1 :- Max_Value
+      // returns the largest possible number in JavaScript.
+      // let x = Number.MAX_VALUE;
+      // console.log(x);
+      // OutPut :- 1.7976931348623157e+308
 
-        // 2 :- Min_Value
-        // returns the lowest possible number in JavaScript.
-        // let y = Number.MIN_VALUE;
-        // console.log(y);
-        // OutPut :- 5e-324
+      // 2 :- Min_Value
+      // returns the lowest possible number in JavaScript.
+      // let y = Number.MIN_VALUE;
+      // console.log(y);
+      // OutPut :- 5e-324
 
-        // 3 :- POSITIVE_INFINITY
-        // POSITIVE_INFINITY is returned on overflow.
-        // let z = Number.POSITIVE_INFINITY;
-        // console.log(z);
-        // OutPut :- Infinity
+      // 3 :- POSITIVE_INFINITY
+      // POSITIVE_INFINITY is returned on overflow.
+      // let z = Number.POSITIVE_INFINITY;
+      // console.log(z);
+      // OutPut :- Infinity
 
-        // 4 :- NEGATIVE_INFINITY
-        // NEGATIVE_INFINITY is returned on overflow.
-        // let a = Number.NEGATIVE_INFINITY;
-        // console.log(a);
-        // OutPut :- -Infinity
+      // 4 :- NEGATIVE_INFINITY
+      // NEGATIVE_INFINITY is returned on overflow.
+      // let a = Number.NEGATIVE_INFINITY;
+      // console.log(a);
+      // OutPut :- -Infinity
 
-        // 5 :- NaN
-        // NaN is a JavaScript reserved word indicating that a number is not a legal number.
-        // let b = Number.NaN;
-        // console.log(b);
-        // OutPut :- NaN
+      // 5 :- NaN
+      // NaN is a JavaScript reserved word indicating that a number is not a legal number.
+      // let b = Number.NaN;
+      // console.log(b);
+      // OutPut :- NaN
 
-        // 6 :- getYear()
-        // LeaveYearFrom = [];
-        // let currentYear = new Date().getFullYear();
-        // for (let i = currentYear - 5; i <= currentYear + 5; i++){
-        // LeaveYearFrom.push(i);
-        // }
-        // console.log(LeaveYearFrom);
+      // 6 :- getYear()
+      // LeaveYearFrom = [];
+      // let currentYear = new Date().getFullYear();
+      // for (let i = currentYear - 5; i <= currentYear + 5; i++){
+      // LeaveYearFrom.push(i);
+      // }
+      // console.log(LeaveYearFrom);
 
+      // Foreach :- find the index of an array
+
+      //   [1, 2, 3].forEach(function (item, index) {
+      //     console.log(item, index);
+      //   });
+
+      // map :- it changes the value of an array and replace with the new value
+
+      //   const three = [1, 2, 3];
+      //   const doubled = three.map(function (item) {
+      //     return item * 2;
+      //   });
+      //   console.log(doubled);
+
+      // filter :- creates a new array with array elements that passes a test.
+
+      //   const ints = [1, 2, 3];
+      //   const evens = ints.filter(function (item) {
+      //     return item % 2 === 0;
+      //   });
+      //   console.log(evens);
+
+      // reduce :- method runs a function on each array element to produce (reduce it to) a single value.
+
+      //   const sum = [1, 2, 3].reduce(function (result, item) {
+      //     return result + item;
+      //   }, 0);
+      //   console.log(sum);
+
+      // some :- it checks some value does any value is true than it returns true... else false
+
+      //   const hasNegativeNumbers = [1, 2, 3, -1, 4].some(function (item) {
+      //     return item > 0;
+      //   });
+      //   console.log(hasNegativeNumbers);
+
+      // every :- it checks every value does any value is true than it returns true... else false
+      //   const allPositiveNumbers = [1, 2, 3].every(function (item) {
+      //     return item > 0;
+      //   });
+      //   console.log(allPositiveNumbers);
+
+      // find :- if it is find than return the value otherwise returns undefined...
+
+      //   const objects = [{ id: "a" }, { id: "b" }, { id: "c" }];
+      //   const found = objects.find(function (item) {
+      //     return item.id === "b";
+      //   });
+      //   console.log(found);
+
+      // find index :- it returns the index of the value if find than 1 ... otherwise -1
+
+      //   const object = [{ id: "a" }, { id: "b" }, { id: "c" }];
+      //   const foundIndex = object.findIndex(function (item) {
+      //     return item.id === "b";
+      //   });
+      //   console.log(foundIndex);
     </script>
-</body>
+  </body>
 </html>
